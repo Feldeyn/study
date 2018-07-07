@@ -6,11 +6,6 @@ public class Phone {
     private String model;
     private double weight;
 
-
-
-
-
-
     public Phone(String number, String model, double weight) {
         this(number, model);
         this.weight = weight;
@@ -36,7 +31,6 @@ public class Phone {
         for (String n: numbers){
             System.out.println(n);
         }
-
     }
 
     public String getNumber() {
