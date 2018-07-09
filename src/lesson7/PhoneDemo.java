@@ -15,6 +15,7 @@ public class PhoneDemo {
         phone2.reciveCall("Теща", "561664164");
         phone1.sendMessage("5656656","656454");
         phone2.sendMessage("9999");
+        System.out.println(Phone.getCount());
     }
 }
 

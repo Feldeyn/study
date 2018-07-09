@@ -1,7 +1,7 @@
 package lesson7;
 
 public class Phone {
-
+    private static int count = 0;
     private String number;
     private String model;
     private double weight;
@@ -11,12 +11,18 @@ public class Phone {
         this.weight = weight;
     }
 
-    Phone(String m, String n) {
+    public Phone(String m, String n) {
         model = m;
         number = n;
+        count++;
     }
 
-    Phone() {
+    public Phone() {
+        count++;
+    }
+
+    static int getCount() {
+        return count;
     }
 
     void reciveCall(String name) {
@@ -26,9 +32,10 @@ public class Phone {
     void reciveCall(String name, String number) {
         System.out.println("звонит " + name + " номер " + number);
     }
-    void sendMessage(String ... numbers ){
+
+    void sendMessage(String... numbers) {
         System.out.println("Отправляю сообщения");
-        for (String n: numbers){
+        for (String n : numbers) {
             System.out.println(n);
         }
     }
@@ -36,14 +43,17 @@ public class Phone {
     public String getNumber() {
         return number;
     }
-    public void  setNumber(String number){
-        this.number=number;
+
+    public void setNumber(String number) {
+        this.number = number;
     }
-    String getModel(){
+
+    String getModel() {
         return model;
     }
-    public void setModel(String model){
-        this.model=model;
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public double getWeight() {
