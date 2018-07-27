@@ -16,6 +16,14 @@ public class Car {
         this.weight = weight;
     }
 
+    public Car(String marka, String classCar, int weight, Driver perviy, Engine motor1) {
+        this.marka = marka;
+        this.classCar = classCar;
+        this.weight = weight;
+        this.perviy = perviy;
+        this.motor1 = motor1;
+    }
+
     public void setMarka() {
         this.marka = marka;
     }
