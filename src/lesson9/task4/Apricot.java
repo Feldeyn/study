@@ -1,7 +1,7 @@
 package lesson9.task4;
 
 public class Apricot extends Fruit {
-    public static final double PRICE_PER_KG = 30;
+    public static final double PRICE_PER_KG = 20;
 
     public Apricot(double weight) {
         super(weight);
