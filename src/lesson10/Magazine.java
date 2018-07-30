@@ -18,4 +18,7 @@ public class Magazine implements Printable {
     public void print() {
         System.out.println("Печатаю журнал " +getName());
     }
+    public static void printMagazine(Printable [] printables){
+        System.out.println();
+    }
 }

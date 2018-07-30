@@ -10,6 +10,7 @@ public class PrintableDemo {
         Printable[] printables = {book1, book2, book3, magazine1, magazine2};
         for (Printable b : printables) {
            b.print();
+
         }
     }
 }
