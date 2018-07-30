@@ -16,9 +16,16 @@ public class Magazine implements Printable {
     }
 
     public void print() {
-        System.out.println("Печатаю журнал " +getName());
+        System.out.println("Печатаю журнал " + getName());
     }
-    public static void printMagazine(Printable [] printables){
-        System.out.println();
+
+    public static void printMagazine(Printable[] printables) {
+        System.out.println("\n" + "Журналы в наличии");
+        for (Printable p : printables) {
+            if (p instanceof Magazine) {
+                Magazine m = (Magazine) p;
+                System.out.println(m.getName());
+            }
+        }
     }
 }

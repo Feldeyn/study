@@ -9,8 +9,9 @@ public class PrintableDemo {
         Printable magazine2 = new Magazine("Mir fantastici");
         Printable[] printables = {book1, book2, book3, magazine1, magazine2};
         for (Printable b : printables) {
-           b.print();
-
+            b.print();
         }
+        Magazine.printMagazine(printables);
+        Book.printBook(printables);
     }
 }
