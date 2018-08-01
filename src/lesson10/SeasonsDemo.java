@@ -1,7 +1,5 @@
 package lesson10;
 
-import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory;
-
 public class SeasonsDemo {
     public static void main(String[] args) {
         Seasons favorite = Seasons.SPRING;

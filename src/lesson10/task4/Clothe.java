@@ -10,4 +10,18 @@ public abstract class Clothe {
         this.price=price;
         this.size=size;
     }
+
+    public Size getSize() {
+        return size;
+    }
+
+    void setPrice(int price){
+        this.price=price;
+    }
+    int getPrice(){
+        return price;
+    }
+    String getColor(){
+        return color;
+    }
 }
