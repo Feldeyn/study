@@ -1,7 +1,7 @@
 package lesson14;
 
-public class HeavyBox extends Box6 {
-    int weight; // вес коробки
+public class HeavyBox extends Box6 implements Comparable<HeavyBox> {
+    private int weight; // вес коробки
 
     public HeavyBox() {
     }
@@ -13,4 +13,12 @@ public class HeavyBox extends Box6 {
         this.weight = weight;
     }
 
+    public int getWeight() {
+        return weight;
+    }
+
+    public int compareTo(HeavyBox anothe) {
+        int anotheWeight = anothe.getWeight();
+        return this.weight - anotheWeight;
+    }
 }
