@@ -21,4 +21,14 @@ public class HeavyBox extends Box6 implements Comparable<HeavyBox> {
         int anotheWeight = anothe.getWeight();
         return this.weight - anotheWeight;
     }
+
+    @Override
+    public String toString() {
+        return "HeavyBox{" +
+                "weight=" + weight +
+                ", width=" + width +
+                ", height=" + height +
+                ", depth=" + depth +
+                "} " + super.toString();
+    }
 }
