@@ -1,13 +1,10 @@
 package lesson17;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class HashMapDemo {
     public static void main(String[] args) {
-        Map<String,Toy> map = new HashMap<>();
+        Map<String,Toy> map = new TreeMap<>();
 map.put("Кукла", new Toy("Кукла", 254));
 map.put("Машинка", new Toy("Машинка", 564));
 map.put("Кубик", new Toy("Кубик", 174));
