@@ -19,8 +19,8 @@ public class Category {
     }
 
     public static void main(String[] args) {
-        comparatorChoise();
-        Set<Product> prod = new TreeSet<>();
+        ProductComparatorName pc = new ProductComparatorName();
+        Set<Product> prod = new TreeSet<>(pc);
         Product p1 = new Product("Sony", 3000.23, 1);
         Product p2 = new Product("LG", 2700.52, 2);
         Product p3 = new Product("Lenovo", 2100.52, 3);
@@ -32,13 +32,7 @@ public class Category {
 
     public static void print(Set<Product> product) {
         for (Product p : product) {
-            System.out.println(p.getPrice());
+            System.out.println(p.getName());
         }
     }
-
-    public static void comparatorChoise() {
-        ProductComparatorName pc = new ProductComparatorName();
-
-    }
-
 }
